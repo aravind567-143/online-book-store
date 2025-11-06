@@ -18,11 +18,10 @@ services:
       - key: JWT_SECRET
         sync: false
     
-  # Frontend Web Service
-  - type: web
+  # Frontend Static Site
+  - type: static
     name: online-bookstore-frontend
     env: static
-    region: oregon
     plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
