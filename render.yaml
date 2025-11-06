@@ -22,7 +22,7 @@ services:
   - type: web
     name: online-bookstore-frontend
     env: static
-    buildCommand: npm --prefix frontend install && npm --prefix frontend run build
+    buildCommand: npm install && npm run build
     staticPublishPath: frontend/dist
     envVars:
       - key: VITE_API_URL
